@@ -1,0 +1,33 @@
+format = """\
+[](#6272a4)\
+$username\
+$hostname\
+[](bg:#bd93f9 fg:#6272a4)\
+$directory\
+[](bg:#ff79c6 fg:#bd93f9)\
+$time\
+[](fg:#ff79c6) \
+"""
+
+[username]
+show_always = true
+style_user = "bg:#6272a4 fg:#f8f8f2 bold"
+style_root = "bg:#6272a4 fg:#f8f8f2 bold"
+format = '[$user]($style)'
+
+[hostname]
+ssh_only = false
+style = "bg:#6272a4 fg:#f8f8f2 bold"
+format = '[@$hostname ]($style)'
+
+[directory]
+style = "bg:#bd93f9 fg:#f8f8f2 bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "bg:#ff79c6 fg:#f8f8f2 bold"
+format = '[ $time ]($style)'

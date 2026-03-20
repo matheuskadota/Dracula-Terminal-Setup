@@ -1,8 +1,24 @@
 # 🧛 Dracula Terminal Setup
 
+> 🖥️ **Desktop** — Intel i3-10100 · RTX 3050 · Windows 11 Pro (25H2) + Fedora 43 WSL2
+
 Setup unificado do terminal com tema **Dracula Powerline** para **Windows (PowerShell)** e **Fedora Linux (WSL2)**, usando o motor [Starship](https://starship.rs/).
 
 ![Preview](IMG/Windows%20-%20Fedora.png)
+
+---
+
+## 🖥️ Hardware
+
+| Componente | Especificação |
+|---|---|
+| CPU | Intel Core i3-10100 @ 3.60 GHz (8 threads) |
+| RAM | 16 GB DDR4 2400 MHz |
+| GPU | NVIDIA GeForce RTX 3050 + Intel UHD 630 |
+| OS | Windows 11 Pro (25H2) + Fedora 43 WSL2 |
+| Terminal | Windows Terminal 1.23 |
+| Shell Windows | PowerShell 7.5.4 |
+| Shell Linux | Zsh 5.9 |
 
 ---
 
@@ -91,9 +107,20 @@ Copy-Item .\shared\starship.toml $env:USERPROFILE\.config\starship.toml
 
 ---
 
-## ⚠️ Aviso Importante
+## 📍 Locais de Configuração
 
-Nunca copiar ícones de Nerd Font pelo navegador — corrompem o UTF-8.
+| Arquivo | Caminho no sistema |
+|---|---|
+| PowerShell profile | `C:\Users\Mattk\OneDrive\Documentos\PowerShell\Microsoft.PowerShell_profile.ps1` |
+| Starship (Windows) | `C:\Users\Mattk\.config\starship.toml` |
+| .zshrc (WSL) | `/home/kadota/.zshrc` |
+| Starship (Linux) | `/home/kadota/.config/starship.toml` |
+
+---
+
+## ⚠️ CRÍTICO: Aviso sobre Nerd Font
+
+**Nunca copiar ícones de Nerd Font pelo navegador** — corrompem o UTF-8.
 Sempre injetar configurações via terminal:
 
 ```bash
